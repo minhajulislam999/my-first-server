@@ -1,6 +1,14 @@
 const express = require('express');
 
+
+
 const app = express();
+
+const cors = require('cors');
+
+app.use(cors());
+
+
 
 const users = [
     {id: 1, name: "Gold", age: 20},
