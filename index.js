@@ -22,6 +22,10 @@ app.get('/users/:id', (req, res) =>{
     res.json(user);
 })
 
+app.get('/users', (req, res) => {
+    res.json(users);
+});
+
 app.get("/", (req, res) =>{
     res.json([
         {name: "Gold", age: 20},
